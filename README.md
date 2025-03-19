@@ -35,10 +35,13 @@ The project includes CPU and GPU implementations for image processing tasks.
 ## File Structure
 ```
 apple-gpu-computing/
-│── src/                  # Source code for CPU and GPU processing  
-│── shaders/              # Metal shader files  
-│── test/                 # Input images for testing  
-│── results/              # Output images after processing  
-│── README.md             # Project documentation  
-│── run_benchmark.sh      # Benchmark script  
+│── apple-gpu-computing.xcodeproj/    # Xcode project files and configurations  
+│── apple-gpu-computing/              # Main source directory containing CPU and GPU code  
+│   │── test/                         # Sample input images for testing the processing pipeline  
+│   │── results/                      # Output images generated after GPU processing  
+│   │── compute.metal                 # Metal shader file for GPU-accelerated image processing  
+│   │── main.cpp                      # Main application logic for loading, processing, and saving images  
+│── metal-cpp/                        # C++ bindings and utilities for interfacing with Metal  
+│── LICENSE                           # License information for the project  
+│── README.md                         # Project documentation and usage instructions  
 ```
