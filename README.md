@@ -1,11 +1,11 @@
 # Apple GPU Computing with Metal
 
-This repository contains an example project demonstrating image processing parallelized on Apple Silicon GPUs using Metal. The project applies various image transformations, showcasing the power of Metal for high-performance GPU computing on macOS.
+This repository contains an example project demonstrating image processing parallelized on Apple Silicon GPUs using Metal. The project applies gaussian blur, showcasing the power of Metal for high-performance GPU computing on macOS.
 
 ## Features
 - Image processing accelerated with Metal
 - Parallel execution on Apple Silicon GPUs
-- Example implementations for common image operations
+- Example implementation for gaussian blur
 - Comparison of CPU vs. GPU performance
 
 ## Prerequisites
