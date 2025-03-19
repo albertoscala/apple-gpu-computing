@@ -33,7 +33,7 @@ cd apple-gpu-computing
 The project includes CPU and GPU implementations for image processing tasks.
 
 ## File Structure
-
+```
 apple-gpu-computing/
 │── src/                  # Source code for CPU and GPU processing  
 │── shaders/              # Metal shader files  
@@ -41,3 +41,4 @@ apple-gpu-computing/
 │── results/              # Output images after processing  
 │── README.md             # Project documentation  
 │── run_benchmark.sh      # Benchmark script  
+```
