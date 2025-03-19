@@ -25,9 +25,8 @@ cd apple-gpu-computing
 3. Build and run on a Mac with an Apple GPU.
 
 ## Usage
-- The test/ directory contains sample images used for processing.
-- The results/ directory stores output images after processing.
-- Modify main.mm or the Metal shader files to experiment with different image processing techniques.
+- The `test/` directory contains sample images used for processing.
+- The `results/` directory stores output images after processing.
 
 ## Performance Comparison
 
