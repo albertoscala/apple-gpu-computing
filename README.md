@@ -16,7 +16,7 @@ This repository contains an example project demonstrating image processing paral
 ## Installation
 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/albertoscala/apple-gpu-computing/
 cd apple-gpu-computing
 ```
