@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		48A6B0052D88B61400CC5F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6B0042D88B61400CC5F6D /* Foundation.framework */; };
+		48A6B0072D88B62000CC5F6D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6B0062D88B62000CC5F6D /* QuartzCore.framework */; };
+		48A6B0092D88B62600CC5F6D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6B0082D88B62600CC5F6D /* Metal.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4821B1742D88B43A009F8A8D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,12 +26,20 @@
 
 /* Begin PBXFileReference section */
 		4821B1762D88B43A009F8A8D /* apple-gpu-computing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "apple-gpu-computing"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A6B0042D88B61400CC5F6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48A6B0062D88B62000CC5F6D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		48A6B0082D88B62600CC5F6D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4821B1782D88B43A009F8A8D /* apple-gpu-computing */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "apple-gpu-computing";
+			sourceTree = "<group>";
+		};
+		48A6B0022D88B4E900CC5F6D /* metal-cpp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "metal-cpp";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A6B0052D88B61400CC5F6D /* Foundation.framework in Frameworks */,
+				48A6B0072D88B62000CC5F6D /* QuartzCore.framework in Frameworks */,
+				48A6B0092D88B62600CC5F6D /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +63,8 @@
 			children = (
 				4821B1782D88B43A009F8A8D /* apple-gpu-computing */,
 				4821B1772D88B43A009F8A8D /* Products */,
+				48A6B0022D88B4E900CC5F6D /* metal-cpp */,
+				48A6B0032D88B61400CC5F6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +74,16 @@
 				4821B1762D88B43A009F8A8D /* apple-gpu-computing */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		48A6B0032D88B61400CC5F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A6B0082D88B62600CC5F6D /* Metal.framework */,
+				48A6B0062D88B62000CC5F6D /* QuartzCore.framework */,
+				48A6B0042D88B61400CC5F6D /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +103,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				4821B1782D88B43A009F8A8D /* apple-gpu-computing */,
+				48A6B0022D88B4E900CC5F6D /* metal-cpp */,
 			);
 			name = "apple-gpu-computing";
 			packageProductDependencies = (
@@ -180,6 +210,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MERGED_BINARY_TYPE = automatic;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -235,6 +266,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MERGED_BINARY_TYPE = automatic;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -244,7 +276,9 @@
 		4821B17E2D88B43A009F8A8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/metal-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -252,7 +286,9 @@
 		4821B17F2D88B43A009F8A8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/metal-cpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

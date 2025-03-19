@@ -1,0 +1,6 @@
+apple-gpu-computing/test/lisa_upscaled.ppm
+apple-gpu-computing/test/big_test.ppm
+apple-gpu-computing/results/lisa_upscaled_blurred_gpu.ppm
+apple-gpu-computing/results/lisa_upscaled_blurred_cpu.ppm
+apple-gpu-computing/results/big_test_blurred_gpu.ppm
+apple-gpu-computing/results/big_test_blurred_cpu.ppm
