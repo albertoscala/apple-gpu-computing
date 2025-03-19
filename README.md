@@ -28,10 +28,6 @@ cd apple-gpu-computing
 - The `test/` directory contains sample images used for processing.
 - The `results/` directory stores output images after processing.
 
-## Performance Comparison
-
-The project includes CPU and GPU implementations for image processing tasks.
-
 ## File Structure
 ```
 apple-gpu-computing/
