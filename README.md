@@ -16,9 +16,10 @@ This repository contains an example project demonstrating image processing paral
 ## Installation
 1. Clone the repository:
 
+```
 git clone https://github.com/albertoscala/apple-gpu-computing/
 cd apple-gpu-computing
-
+```
 
 2. Open the project in Xcode.
 3. Build and run on a Mac with an Apple GPU.
